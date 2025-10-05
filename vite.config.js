@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-const repo = 'berlin-vintage-tour'
+const repo = 'berlin-weekend'
 
 export default defineConfig({
   plugins: [react()],
