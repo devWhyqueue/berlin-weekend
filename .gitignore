@@ -1,0 +1,7 @@
+node_modules/
+dist/
+docs/*.map
+.DS_Store
+*.log
+
+node_modules
