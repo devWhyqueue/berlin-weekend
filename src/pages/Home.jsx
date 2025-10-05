@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Beer, ShoppingBag, Palette, MapPin, ArrowRight, Coffee } from "lucide-react";
+import { Beer, ShoppingBag, Palette, MapPin, ArrowRight, Coffee, Wine } from "lucide-react";
 
 export default function Home() {
   return (
@@ -145,6 +145,38 @@ export default function Home() {
                 </div>
               </div>
               <ArrowRight className="w-6 h-6 text-amber-700 shrink-0 ml-4" />
+            </div>
+          </Link>
+
+          <Link
+            to="/bar-hopping"
+            className="block rounded-2xl border-2 border-rose-200 bg-gradient-to-br from-rose-50 to-pink-50 p-6 shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
+          >
+            <div className="flex items-start justify-between">
+              <div className="flex-1">
+                <div className="flex items-center gap-3 mb-2">
+                  <Wine className="w-6 h-6 text-rose-700" />
+                  <h2 className="text-xl font-semibold text-zinc-900">
+                    Bar-Hopping Route
+                  </h2>
+                </div>
+                <p className="text-sm text-zinc-700 mb-3">
+                  5 non-smoking bars from Schöneberg → Kreuzberg → Wrangelkiez → Mitte. 
+                  Perfect Friday/Saturday night route with bike & BVG connections.
+                </p>
+                <div className="flex flex-wrap gap-2 text-xs text-zinc-600">
+                  <span className="rounded-full bg-white px-2 py-1 border border-rose-200">
+                    5 bars
+                  </span>
+                  <span className="rounded-full bg-white px-2 py-1 border border-rose-200">
+                    €–€€
+                  </span>
+                  <span className="rounded-full bg-white px-2 py-1 border border-rose-200">
+                    40 min bike time
+                  </span>
+                </div>
+              </div>
+              <ArrowRight className="w-6 h-6 text-rose-700 shrink-0 ml-4" />
             </div>
           </Link>
         </div>
