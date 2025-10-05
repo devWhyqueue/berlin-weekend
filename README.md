@@ -2,21 +2,6 @@
 
 Mobile-friendly tour guides for exploring Berlin with friends!
 
-## 🎯 Available Tours
-
-### 🍺 [Späti Tour](https://devwhyqueue.github.io/berlin-weekend/späti-tour)
-Evening walking tour through Prenzlauer Berg → Mitte → Kreuzberg
-- 5 iconic spätis
-- ~2.5–3 hours
-- 6 km walking
-- Start time: 20:00
-
-### 🛍️ [Vintage Tour](https://devwhyqueue.github.io/berlin-weekend/vintage-tour)
-Bike-friendly loop through Berlin's best vintage shops
-- 10 curated stores
-- 3–4 hours by bike
-- Neukölln → Kreuzberg → Mitte → Prenzlauer Berg → Friedrichshain
-
 ## 🚀 Quick Start
 
 ```bash
@@ -59,6 +44,8 @@ src/
 │   ├── Home.jsx          # Landing page
 │   ├── SpatiTour.jsx     # Späti tour
 │   └── VintageTour.jsx   # Vintage tour
+|   ├── Museums.jsx       # Museums
+|   └── Cafes.jsx         # Cafes
 ├── App.jsx               # Router setup
 ├── main.jsx              # Entry point
 └── index.css             # Tailwind

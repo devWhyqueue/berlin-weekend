@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Beer, ShoppingBag, Palette, MapPin, ArrowRight } from "lucide-react";
+import { Beer, ShoppingBag, Palette, MapPin, ArrowRight, Coffee } from "lucide-react";
 
 export default function Home() {
   return (
@@ -113,6 +113,38 @@ export default function Home() {
                 </div>
               </div>
               <ArrowRight className="w-6 h-6 text-purple-600 shrink-0 ml-4" />
+            </div>
+          </Link>
+
+          <Link
+            to="/cafes"
+            className="block rounded-2xl border-2 border-amber-200 bg-gradient-to-br from-amber-50 to-orange-50 p-6 shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
+          >
+            <div className="flex items-start justify-between">
+              <div className="flex-1">
+                <div className="flex items-center gap-3 mb-2">
+                  <Coffee className="w-6 h-6 text-amber-700" />
+                  <h2 className="text-xl font-semibold text-zinc-900">
+                    Remarkable Cafés
+                  </h2>
+                </div>
+                <p className="text-sm text-zinc-700 mb-3">
+                  10 outstanding specialty coffee spots across Berlin. 
+                  Third-wave pioneers, hidden gems, and the best beans in town.
+                </p>
+                <div className="flex flex-wrap gap-2 text-xs text-zinc-600">
+                  <span className="rounded-full bg-white px-2 py-1 border border-amber-200">
+                    10 cafés
+                  </span>
+                  <span className="rounded-full bg-white px-2 py-1 border border-amber-200">
+                    €€–€€€
+                  </span>
+                  <span className="rounded-full bg-white px-2 py-1 border border-amber-200">
+                    Specialty coffee
+                  </span>
+                </div>
+              </div>
+              <ArrowRight className="w-6 h-6 text-amber-700 shrink-0 ml-4" />
             </div>
           </Link>
         </div>

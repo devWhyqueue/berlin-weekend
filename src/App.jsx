@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import SpatiTour from "./pages/SpatiTour";
 import VintageTour from "./pages/VintageTour";
 import Museums from "./pages/Museums";
+import Cafes from "./pages/Cafes";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/späti-tour" element={<SpatiTour />} />
         <Route path="/vintage-tour" element={<VintageTour />} />
         <Route path="/museums" element={<Museums />} />
+        <Route path="/cafes" element={<Cafes />} />
       </Routes>
     </BrowserRouter>
   );
