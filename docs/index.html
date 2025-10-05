@@ -3,9 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Berlin Vintage Tour</title>
-    <script type="module" crossorigin src="/berlin-weekend/assets/index-CBhLElSb.js"></script>
-    <link rel="stylesheet" crossorigin href="/berlin-weekend/assets/index-CuYR2DWS.css">
+    <title>Berlin Weekend Tours</title>
+    <meta name="description" content="Curated walking & biking tours through Berlin - Späti tour and vintage shopping tour">
+    
+    <!-- Handle SPA routing on GitHub Pages -->
+    <script>
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.pathname) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/berlin-weekend/assets/index-CVa4PoeP.js"></script>
+    <link rel="stylesheet" crossorigin href="/berlin-weekend/assets/index-yj7jvkDT.css">
   </head>
   <body class="bg-zinc-50">
     <div id="root"></div>

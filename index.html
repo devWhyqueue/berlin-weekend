@@ -3,7 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Berlin Vintage Tour</title>
+    <title>Berlin Weekend Tours</title>
+    <meta name="description" content="Curated walking & biking tours through Berlin - Späti tour and vintage shopping tour">
+    
+    <!-- Handle SPA routing on GitHub Pages -->
+    <script>
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.pathname) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   </head>
   <body class="bg-zinc-50">
     <div id="root"></div>
