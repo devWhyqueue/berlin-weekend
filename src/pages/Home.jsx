@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Beer, ShoppingBag, MapPin, ArrowRight } from "lucide-react";
+import { Beer, ShoppingBag, Palette, MapPin, ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
@@ -81,6 +81,38 @@ export default function Home() {
                 </div>
               </div>
               <ArrowRight className="w-6 h-6 text-zinc-700 shrink-0 ml-4" />
+            </div>
+          </Link>
+
+          <Link
+            to="/museums"
+            className="block rounded-2xl border-2 border-purple-200 bg-gradient-to-br from-purple-50 to-indigo-50 p-6 shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
+          >
+            <div className="flex items-start justify-between">
+              <div className="flex-1">
+                <div className="flex items-center gap-3 mb-2">
+                  <Palette className="w-6 h-6 text-purple-600" />
+                  <h2 className="text-xl font-semibold text-zinc-900">
+                    Museums & Galleries
+                  </h2>
+                </div>
+                <p className="text-sm text-zinc-700 mb-3">
+                  10 current/upcoming exhibitions with affordable student tickets (≤ €15). 
+                  Contemporary art, photography, and major retrospectives.
+                </p>
+                <div className="flex flex-wrap gap-2 text-xs text-zinc-600">
+                  <span className="rounded-full bg-white px-2 py-1 border border-purple-200">
+                    10 exhibitions
+                  </span>
+                  <span className="rounded-full bg-white px-2 py-1 border border-purple-200">
+                    €3–€10 (students)
+                  </span>
+                  <span className="rounded-full bg-white px-2 py-1 border border-purple-200">
+                    Oct 2025 – Jan 2026
+                  </span>
+                </div>
+              </div>
+              <ArrowRight className="w-6 h-6 text-purple-600 shrink-0 ml-4" />
             </div>
           </Link>
         </div>
