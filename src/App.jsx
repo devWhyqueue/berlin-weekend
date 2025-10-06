@@ -7,6 +7,7 @@ import Museums from "./pages/Museums";
 import Cafes from "./pages/Cafes";
 import BarHopping from "./pages/BarHopping";
 import Clubbing from "./pages/Clubbing";
+import Restaurants from "./pages/Restaurants";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/vintage-tour" element={<VintageTour />} />
         <Route path="/museums" element={<Museums />} />
         <Route path="/cafes" element={<Cafes />} />
+        <Route path="/restaurants" element={<Restaurants />} />
         <Route path="/bar-hopping" element={<BarHopping />} />
         <Route path="/clubbing" element={<Clubbing />} />
       </Routes>

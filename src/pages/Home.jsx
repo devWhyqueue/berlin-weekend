@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Beer, ShoppingBag, Palette, MapPin, ArrowRight, Coffee, Wine, Music2 } from "lucide-react";
+import { Beer, ShoppingBag, Palette, MapPin, ArrowRight, Coffee, Wine, Music2, Utensils } from "lucide-react";
 
 export default function Home() {
   return (
@@ -20,6 +20,33 @@ export default function Home() {
         </header>
 
         <div className="space-y-4">
+          <Link
+            to="/restaurants"
+            className="block rounded-2xl border-2 border-rose-200 bg-gradient-to-br from-rose-50 to-pink-50 p-6 shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
+          >
+            <div className="flex items-start justify-between">
+              <div className="flex-1">
+                <div className="flex items-center gap-3 mb-2">
+                  <Utensils className="w-6 h-6 text-rose-700" />
+                  <h2 className="text-xl font-semibold text-zinc-900">
+                    Restaurants — Veggie-Friendly Picks
+                  </h2>
+                </div>
+                <p className="text-sm text-zinc-700 mb-3">
+                  6 curated spots: döner classic, vegan pizza, Sichuan, Uzbek, and more.
+                </p>
+                <div className="flex flex-wrap gap-2 text-xs text-zinc-600">
+                  <span className="rounded-full bg-white px-2 py-1 border border-rose-200">
+                    6 places
+                  </span>
+                  <span className="rounded-full bg-white px-2 py-1 border border-rose-200">
+                    €–€€
+                  </span>
+                </div>
+              </div>
+              <ArrowRight className="w-6 h-6 text-rose-700 shrink-0 ml-4" />
+            </div>
+          </Link>
           <Link
             to="/clubbing"
             className="block rounded-2xl border-2 border-indigo-200 bg-gradient-to-br from-indigo-50 to-blue-50 p-6 shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
