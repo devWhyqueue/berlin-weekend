@@ -10,7 +10,7 @@ const ComedyOptionsTab = () => {
       title: "Modus",
       fullTitle: "Spree vom Weizen",
       subtitle: "Poetry Slam & Stand Up Show",
-      time: "20:00 - 22:00",
+      time: "20:00",
       location: "Modus Berlin",
       price: "€18",
       description: "The cheekiest rascal of Berlin's live literature. Poetry slam stars, stand-up comedians and musicians mix in the techno club between fog and strobe.",
