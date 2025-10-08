@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Share2, MapPin, Clock, ExternalLink, ChevronLeft, Calendar, Star, Coffee, Utensils, Music2, Palette, Beer, ShoppingBag, Wine } from "lucide-react";
 import { Link } from "react-router-dom";
+import ComedyOptionsTab from "../components/ComedyOptionsTab";
 
 const WEEKEND_PLAN = {
   title: "Berlin Weekend Plan",
@@ -150,13 +151,10 @@ const WEEKEND_PLAN = {
         },
          {
            time: "8:00 PM",
-           title: "Spree vom Weizen - Poetry Slam & Stand Up Show",
+           title: "Comedy Options",
            type: "comedy",
-           description: "Time: 20:00 - 22:00, Location: Modus Berlin, Price: €18",
-           image: "/berlin-weekend/images/weekend-plan/spree-vom-weizen.jpg",
-           details: "The cheekiest rascal of Berlin's live literature. Poetry slam stars, stand-up comedians and musicians mix in the techno club between fog and strobe.",
-           link: "https://modus-berlin.de/event/111025-SpreevomWeizen-PoetrySlam-Stand-UpShowmitLuisaCharlotteSchulz",
-           maps: "https://www.google.com/maps/search/?api=1&query=Modus+Berlin"
+           description: "Choose from three great comedy shows",
+           isTabComponent: true
          },
          {
            time: "11:00 PM",
@@ -391,98 +389,112 @@ export default function WeekendPlan() {
 
             <div className="space-y-4">
               {day.activities.map((activity, activityIndex) => (
-                <div key={activityIndex} className="bg-white/70 rounded-2xl p-4 shadow-sm border border-white/50">
-                  <div className="flex items-start gap-3">
-                    {activity.profileImage ? (
-                      <div className="flex-shrink-0">
-                        <img 
-                          src={activity.profileImage} 
-                          alt={activity.title}
-                          className="w-20 h-20 object-cover rounded-xl shadow-sm border-2 border-white"
-                          loading="lazy"
-                          onError={(e) => { e.target.style.display = 'none'; }}
-                        />
-                      </div>
-                    ) : (
-                      <div className="flex-shrink-0">
-                        <div className={`w-8 h-8 rounded-full flex items-center justify-center border ${getActivityColor(activity.type)}`}>
-                          {getActivityIcon(activity.type)}
-                        </div>
-                      </div>
-                    )}
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2 mb-1">
-                        <span className="text-xs font-mono text-zinc-500 bg-zinc-100 px-2 py-0.5 rounded">
-                          {activity.time}
-                        </span>
-                        <span className={`text-xs px-2 py-0.5 rounded-full border ${getActivityColor(activity.type)}`}>
-                          {activity.type}
-                        </span>
-                      </div>
-                      <h4 className="font-semibold text-zinc-900 mb-1">{activity.title}</h4>
-                      <p className="text-sm text-zinc-700 mb-2">{activity.description}</p>
-                      
-                      {activity.details && (
-                        <p className="text-xs text-zinc-600 leading-relaxed mb-2">{activity.details}</p>
-                      )}
-                      
-                      {activity.image && (
-                        <div className="mb-3">
+                activity.isTabComponent ? (
+                  <div key={activityIndex}>
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="text-xs font-mono text-zinc-500 bg-zinc-100 px-2 py-0.5 rounded">
+                        {activity.time}
+                      </span>
+                      <span className={`text-xs px-2 py-0.5 rounded-full border ${getActivityColor(activity.type)}`}>
+                        {activity.type}
+                      </span>
+                    </div>
+                    <ComedyOptionsTab />
+                  </div>
+                ) : (
+                  <div key={activityIndex} className="bg-white/70 rounded-2xl p-4 shadow-sm border border-white/50">
+                    <div className="flex items-start gap-3">
+                      {activity.profileImage ? (
+                        <div className="flex-shrink-0">
                           <img 
-                            src={activity.image} 
+                            src={activity.profileImage} 
                             alt={activity.title}
-                            className="w-full h-48 object-cover rounded-xl shadow-sm"
+                            className="w-20 h-20 object-cover rounded-xl shadow-sm border-2 border-white"
                             loading="lazy"
                             onError={(e) => { e.target.style.display = 'none'; }}
                           />
                         </div>
+                      ) : (
+                        <div className="flex-shrink-0">
+                          <div className={`w-8 h-8 rounded-full flex items-center justify-center border ${getActivityColor(activity.type)}`}>
+                            {getActivityIcon(activity.type)}
+                          </div>
+                        </div>
                       )}
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2 mb-1">
+                          <span className="text-xs font-mono text-zinc-500 bg-zinc-100 px-2 py-0.5 rounded">
+                            {activity.time}
+                          </span>
+                          <span className={`text-xs px-2 py-0.5 rounded-full border ${getActivityColor(activity.type)}`}>
+                            {activity.type}
+                          </span>
+                        </div>
+                        <h4 className="font-semibold text-zinc-900 mb-1">{activity.title}</h4>
+                        <p className="text-sm text-zinc-700 mb-2">{activity.description}</p>
+                        
+                        {activity.details && (
+                          <p className="text-xs text-zinc-600 leading-relaxed mb-2">{activity.details}</p>
+                        )}
+                        
+                        {activity.image && (
+                          <div className="mb-3">
+                            <img 
+                              src={activity.image} 
+                              alt={activity.title}
+                              className="w-full h-48 object-cover rounded-xl shadow-sm"
+                              loading="lazy"
+                              onError={(e) => { e.target.style.display = 'none'; }}
+                            />
+                          </div>
+                        )}
 
-                      <div className="flex flex-wrap gap-2">
-                        {activity.maps && (
-                          Array.isArray(activity.maps) ? (
-                            activity.maps.map((mapItem, index) => (
+                        <div className="flex flex-wrap gap-2">
+                          {activity.maps && (
+                            Array.isArray(activity.maps) ? (
+                              activity.maps.map((mapItem, index) => (
+                                <a 
+                                  key={index}
+                                  href={typeof mapItem === 'string' ? mapItem : mapItem.url} 
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center gap-1 rounded-full border border-zinc-200 px-3 py-1.5 text-xs bg-white shadow hover:bg-zinc-50"
+                                >
+                                  <MapPin className="w-3 h-3" /> {typeof mapItem === 'string' ? `Maps ${index + 1}` : mapItem.name}
+                                </a>
+                              ))
+                            ) : (
                               <a 
-                                key={index}
-                                href={typeof mapItem === 'string' ? mapItem : mapItem.url} 
+                                href={activity.maps} 
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-1 rounded-full border border-zinc-200 px-3 py-1.5 text-xs bg-white shadow hover:bg-zinc-50"
                               >
-                                <MapPin className="w-3 h-3" /> {typeof mapItem === 'string' ? `Maps ${index + 1}` : mapItem.name}
+                                <MapPin className="w-3 h-3" /> Maps
                               </a>
-                            ))
-                          ) : (
+                            )
+                          )}
+                          {activity.link && (
                             <a 
-                              href={activity.maps} 
+                              href={activity.link} 
                               target="_blank"
                               rel="noopener noreferrer"
                               className="inline-flex items-center gap-1 rounded-full border border-zinc-200 px-3 py-1.5 text-xs bg-white shadow hover:bg-zinc-50"
                             >
-                              <MapPin className="w-3 h-3" /> Maps
+                              <ExternalLink className="w-3 h-3" /> 
+                              {activity.link.startsWith('/') ? 'View Details' : 'Website'}
                             </a>
-                          )
-                        )}
-                        {activity.link && (
-                          <a 
-                            href={activity.link} 
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 rounded-full border border-zinc-200 px-3 py-1.5 text-xs bg-white shadow hover:bg-zinc-50"
-                          >
-                            <ExternalLink className="w-3 h-3" /> 
-                            {activity.link.startsWith('/') ? 'View Details' : 'Website'}
-                          </a>
-                        )}
-                        {activity.address && (
-                          <span className="inline-flex items-center gap-1 rounded-full border border-zinc-200 px-3 py-1.5 text-xs bg-zinc-50 text-zinc-600">
-                            <MapPin className="w-3 h-3" /> {activity.address}
-                          </span>
-                        )}
+                          )}
+                          {activity.address && (
+                            <span className="inline-flex items-center gap-1 rounded-full border border-zinc-200 px-3 py-1.5 text-xs bg-zinc-50 text-zinc-600">
+                              <MapPin className="w-3 h-3" /> {activity.address}
+                            </span>
+                          )}
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                )
               ))}
             </div>
           </div>
