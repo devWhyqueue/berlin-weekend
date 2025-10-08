@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import WeekendPlan from "./pages/WeekendPlan";
-import SpatiTour from "./pages/SpatiTour";
+import SpaetiTour from "./pages/SpaetiTour";
 import VintageTour from "./pages/VintageTour";
 import Museums from "./pages/Museums";
 import Cafes from "./pages/Cafes";
@@ -16,7 +16,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/weekend-plan" element={<WeekendPlan />} />
-        <Route path="/späti-tour" element={<SpatiTour />} />
+        <Route path="/spaeti-tour" element={<SpaetiTour />} />
         <Route path="/vintage-tour" element={<VintageTour />} />
         <Route path="/museums" element={<Museums />} />
         <Route path="/cafes" element={<Cafes />} />

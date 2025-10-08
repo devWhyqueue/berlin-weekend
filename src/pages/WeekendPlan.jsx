@@ -146,7 +146,7 @@ const WEEKEND_PLAN = {
           type: "food",
           description: "Dervish, Vegd Vegan Burgers, or Yoyo Foodworld",
           image: "/berlin-weekend/images/restaurants/dervish.jpg",
-          link: "/restaurants"
+          link: "/berlin-weekend/restaurants"
         },
          {
            time: "8:00 PM",
@@ -177,7 +177,7 @@ const WEEKEND_PLAN = {
            type: "nightlife",
            description: "See clubbing options for details",
            image: "/berlin-weekend/images/weekend-plan/clubbing.jpg",
-           link: "/clubbing",
+           link: "/berlin-weekend/clubbing",
            details: "Berlin's legendary nightlife scene"
          }
       ]
@@ -206,7 +206,7 @@ const WEEKEND_PLAN = {
           type: "culture",
           description: "Die Möglichkeit der Unvernunft or AuraLabs",
           image: "/berlin-weekend/images/museums/auralabs-ki-trifft-kunst.jpg",
-          link: "/museums"
+          link: "/berlin-weekend/museums"
         },
          {
            time: "3:00 PM",
@@ -220,11 +220,11 @@ const WEEKEND_PLAN = {
          },
          {
            time: "5:00 PM",
-           title: "Späti Tour",
+           title: "Spaeti Tour",
            type: "walk",
            description: "If weather allows",
-           image: "/berlin-weekend/images/weekend-plan/spati-tour.jpg",
-           link: "/späti-tour"
+           image: "/berlin-weekend/images/weekend-plan/spaeti-tour.jpg",
+           link: "/berlin-weekend/spaeti-tour"
          },
          {
            time: "7:00 PM",

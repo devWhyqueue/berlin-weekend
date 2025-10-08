@@ -67,7 +67,7 @@ function mapsRouteUrl(stops) {
   return `https://www.google.com/maps/dir/?api=1&travelmode=walking&waypoints=${waypoints}&destination=${destination}`;
 }
 
-export default function SpatiTour() {
+export default function SpaetiTour() {
   const routeUrl = useMemo(() => mapsRouteUrl(STOPS), []);
 
   const handleShare = async () => {

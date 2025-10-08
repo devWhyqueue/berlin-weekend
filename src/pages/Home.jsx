@@ -117,7 +117,7 @@ export default function Home() {
             </div>
           </Link>
           <Link
-            to="/späti-tour"
+            to="/spaeti-tour"
             className="block rounded-2xl border-2 border-amber-200 bg-gradient-to-br from-amber-50 to-orange-50 p-6 shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
           >
             <div className="flex items-start justify-between">
