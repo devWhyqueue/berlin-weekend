@@ -11,7 +11,7 @@ const CAFES = [
     hours: "Mon–Fri 9–17",
     price: "€€",
     highlights: "Botanical, plant-filled oasis in historic vaults; in-house pastries, natural light",
-    imageUrl: "https://the-greens-berlin.de/images/bg.jpg",
+    imageUrl: "/berlin-weekend/images/cafes/the-greens.jpg",
     website: "https://the-greens-berlin.de",
     hasInstagram: false
   },
@@ -23,7 +23,7 @@ const CAFES = [
     hours: "Daily 9–18",
     price: "€€",
     highlights: "Berlin's third-wave pioneer; industrial-chic roastery, exceptional espresso",
-    imageUrl: "https://bonanzacoffee.de/cdn/shop/files/Screenshot_2025-07-24_at_15.24.14.png?v=1753363485&width=1024",
+    imageUrl: "/berlin-weekend/images/cafes/bonanza-coffee-roasters.jpg",
     website: "https://bonanzacoffee.de",
     hasInstagram: false
   },
@@ -35,7 +35,7 @@ const CAFES = [
     hours: "Daily 8–18",
     price: "€€€",
     highlights: "Minimalist icon of precision brewing; single-origin beans roasted on-site",
-    imageUrl: "https://lh3.googleusercontent.com/p/AF1QipMaBB0en5TvjefkvJ73TANfVdI_dTJlju6IJT8a=s680-w680-h510-rw",
+    imageUrl: "/berlin-weekend/images/cafes/the-barn.jpg",
     website: "https://thebarn.de",
     hasInstagram: false
   },
@@ -47,7 +47,7 @@ const CAFES = [
     hours: "Tue–Sun 10–18",
     price: "€€",
     highlights: "Small roastery with Middle-Eastern flair; beans roasted weekly",
-    imageUrl: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrBK_Ytyae7I73z52jFrs7WmXx5Nl9TJS1x7_S9SLQhq6pmYq21mQIwxHvmLhT1m_pEU6eQeBLBlWTVlctdQuEgKLA-QdsIJYMHQdSytQnY2Rsb2-xKXU8DpFBHMKHUOcO0i_RHy8yY1as=s680-w680-h510-rw",
+    imageUrl: "/berlin-weekend/images/cafes/cafelix-coffee-roasters.jpg",
     website: "https://cafelix.de",
     hasInstagram: false
   },
@@ -59,7 +59,7 @@ const CAFES = [
     hours: "Mon–Sun 9–18",
     price: "€€",
     highlights: "Bright modern space; famed for creamy cheesecake & direct-trade coffee",
-    imageUrl: "https://www.fiveelephant.com/cdn/shop/files/Five_Elephant_Mitte.jpg?v=1708344297&width=1296",
+    imageUrl: "/berlin-weekend/images/cafes/five-elephant.jpg",
     website: "https://fiveelephant.com",
     hasInstagram: false
   },
@@ -71,7 +71,7 @@ const CAFES = [
     hours: "Mon–Sun 9–17",
     price: "€€",
     highlights: "Hidden courtyard café; Aussie-style brunch, top-notch flat whites",
-    imageUrl: "https://lh3.googleusercontent.com/p/AF1QipPz5XY704Do0czIkixCnIKgWjevZcWRA5pLs04g=s680-w680-h510-rw",
+    imageUrl: "/berlin-weekend/images/cafes/father-carpenter.jpg",
     website: "https://fathercarpenter.com",
     instagram: "https://www.instagram.com/fathercarpenter/",
     hasInstagram: true
@@ -84,7 +84,7 @@ const CAFES = [
     hours: "Mon–Sun 9–17",
     price: "€€",
     highlights: "Circular-economy concept; calm minimalist space with local pastries",
-    imageUrl: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4no86Cljv3koCSaUx7sMRz_TYMkVD91F60mDiTCNhU9NXxi5mBTBRN6zHWYO03RyrKzCezKvN9o9czy2rR1o0GQljar0mwkIek3aJ2Y5FFG2jhxfVwYzd4TyxmO6Qajb-mFvhpOJaSq824RQ=s680-w680-h510-rw",
+    imageUrl: "/berlin-weekend/images/cafes/isla-coffee.jpg",
     website: "https://islacoffeeberlin.com",
     instagram: "https://www.instagram.com/islacoffeeberlin/",
     hasInstagram: true
@@ -97,7 +97,7 @@ const CAFES = [
     hours: "Tue–Sun 10–18",
     price: "€€",
     highlights: "Tea & coffee specialists; refined design, transparent sourcing",
-    imageUrl: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npWk0JKdMzaiTOD3BepwxByWeOTB5pctb_5J-_DWc_4dcDARcGJDrO4qvhg0UZZjb7HOcqbiKjUwLn_498dY6KMLQG9Gtq2d7iJ32PPCwAivhJq6PaPBfYIYQjQhSHPu3sUNMQ=s680-w680-h510-rw",
+    imageUrl: "/berlin-weekend/images/cafes/companion-coffee.jpg",
     website: "https://companioncoffee.com",
     instagram: "https://www.instagram.com/companioncoffee/",
     hasInstagram: true
@@ -110,7 +110,7 @@ const CAFES = [
     hours: "Mon–Sun 8–18",
     price: "€€",
     highlights: "Energetic espresso bar; experimental roasts, brunch & baked goods",
-    imageUrl: "https://lh3.googleusercontent.com/p/AF1QipPFZrcU7yKfck5d7xf0GbnFBm1NhP3UigFLe-kU=s680-w680-h510-rw",
+    imageUrl: "/berlin-weekend/images/cafes/19grams-schlesi.jpg",
     website: "https://19grams.coffee",
     instagram: "https://www.instagram.com/19gramscoffee/",
     hasInstagram: true
@@ -123,7 +123,7 @@ const CAFES = [
     hours: "Mon–Sun 9–18",
     price: "€€",
     highlights: "Filter-coffee haven; quiet atmosphere, V60 specialists since 2011",
-    imageUrl: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npMEnfoOlS-oOJLWpM2fVvJ-JfL24L60ndb9a3poAem9lntJV-z9o_t9F_BxjJtmlirRwc2tkYiPV4DuBTjc4e2mn3j6j7ac0Yie-inAMA44gF45iiLHQIHjnV3jPGEyS6JRQqpHjoxL8M=s680-w680-h510-rw",
+    imageUrl: "/berlin-weekend/images/cafes/chapter-one-coffee.jpg",
     website: "https://chapter-one-coffee.com",
     instagram: "https://www.instagram.com/chapteronecoffee/",
     hasInstagram: true

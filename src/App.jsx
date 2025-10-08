@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import WeekendPlan from "./pages/WeekendPlan";
 import SpatiTour from "./pages/SpatiTour";
 import VintageTour from "./pages/VintageTour";
 import Museums from "./pages/Museums";
@@ -14,6 +15,7 @@ export default function App() {
     <BrowserRouter basename="/berlin-weekend">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/weekend-plan" element={<WeekendPlan />} />
         <Route path="/späti-tour" element={<SpatiTour />} />
         <Route path="/vintage-tour" element={<VintageTour />} />
         <Route path="/museums" element={<Museums />} />

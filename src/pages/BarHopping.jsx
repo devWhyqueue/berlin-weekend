@@ -14,7 +14,7 @@ const BARS = [
     type: "Cocktail bar / elegant",
     website: "https://fabelei.com",
     hasWebsite: true,
-    imageUrl: "https://lh3.googleusercontent.com/p/AF1QipMSSERVQ44SfBq3JWuSC3xgS5QXgHB5FPC1fX0C=s680-w680-h510-rw"
+    imageUrl: "/berlin-weekend/images/bars/fabelei.jpg"
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const BARS = [
     type: "Italian aperitivo / cozy wine bar",
     website: null,
     hasWebsite: false,
-    imageUrl: "https://lh3.googleusercontent.com/p/AF1QipNzo--Q1Nebh8UbD2JpKi7k-g6_7jCoYYcOXpxY=s680-w680-h510-rw"
+    imageUrl: "/berlin-weekend/images/bars/bar-nonno.jpg"
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const BARS = [
     type: "Wine bar / historic apothecary",
     website: "https://ora.berlin",
     hasWebsite: true,
-    imageUrl: "https://lh3.googleusercontent.com/p/AF1QipPIVKan8q36OQePIPYVL4sqPOJIL9kkFgF0of7U=s680-w680-h510-rw"
+    imageUrl: "/berlin-weekend/images/bars/ora.jpg"
   },
   {
     id: 4,
@@ -53,7 +53,7 @@ const BARS = [
     type: "Craft beer bar / casual pub",
     website: "https://hopfenreich.de",
     hasWebsite: true,
-    imageUrl: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nregGDzVFdyXWsVZF8qAegeV-3RuahdIVM3vHTBKJJabABx8jN4XvYclDk4NqUxpruqIRdlFxC8Xba4cKsPXLfiGywHB2MGo96EBgJILjM-XDrrUlH2x196b49z2FabcLNfbARD=s680-w680-h510-rw"
+    imageUrl: "/berlin-weekend/images/bars/hopfenreich.jpg"
   },
   {
     id: 5,
@@ -66,7 +66,7 @@ const BARS = [
     type: "Aperitivo / cocktail bar",
     website: "https://www.barmilanoberlin.com",
     hasWebsite: true,
-    imageUrl: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npF2mwyP3KStgaanf6tdEP3fN_PpFK50K5wcsTXDkqn3q23ov0h5DHRVOSyy6a1N2AWSISHweFAcDdfQ24GK8s3nzPnnL4JhAzjx_RLSpzwUDf1UlcIgn2WTvrpk5ty3NAz58F5Cg=s680-w680-h510-rw"
+    imageUrl: "/berlin-weekend/images/bars/bar-milano.jpg"
   }
 ];
 

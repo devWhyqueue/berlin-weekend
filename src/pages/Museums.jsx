@@ -5,6 +5,30 @@ import { Link } from "react-router-dom";
 const EXHIBITIONS = [
     {
       id: 1,
+      title: "AuraLabs: KI trifft Kunst",
+      venue: "RAW Gelände (Revaler Straße 99)",
+      district: "Friedrichshain",
+      dates: "27 Sep 2025 – ongoing",
+      priceRegular: "€15",
+      priceReduced: "€12",
+      description: "Immersive exhibition space dedicated to the intersection of AI, art, and new media. Features 14 works that evolve in real-time through interaction, generative processes, and projection. Includes interactive installations like 'Portraits in Pink, Blue & Silver' and 'Line Wobbler'.",
+      posterUrl: "/berlin-weekend/images/museums/auralabs-ki-trifft-kunst.jpg",
+      sourceUrl: "https://www.berlin.de/tickets/ausstellungen/auralabs-ki-trifft-kunst-2e66718f-8a7c-4fdc-892b-b9b60de6f028/"
+    },
+    {
+      id: 2,
+      title: "Die Möglichkeit der Unvernunft",
+      venue: "Haus der Kulturen der Welt",
+      district: "Tiergarten / Mitte",
+      dates: "27 Sep 2025 – 19 Oct 2025",
+      priceRegular: "€18.80",
+      priceReduced: "€18.80",
+      description: "Jan Böhmermann & Gruppe Royale take over the HKW for three weeks with their most extensive exhibition yet. Features diverse events including concerts, shows, TV recordings, performances, film screenings, and discussions exploring political and societal questions of our time.",
+      posterUrl: "/berlin-weekend/images/museums/die-moeglichkeit-der-unvernunft.jpg",
+      sourceUrl: "https://www.visitberlin.de/de/event/die-moeglichkeit-der-unvernunft"
+    },
+    {
+      id: 3,
       title: "Lygia Clark: Retrospective",
       venue: "Neue Nationalgalerie",
       district: "Tiergarten / Mitte",
@@ -12,11 +36,11 @@ const EXHIBITIONS = [
       priceRegular: "€16",
       priceReduced: "€8",
       description: "Landmark retrospective of the Brazilian Neo-Concrete pioneer. Around 150 works trace her shift from geometric abstraction to participatory sculptures and sensorial experiments redefining the artist-viewer relationship.",
-      posterUrl: "https://imgproxy.berlinonline.net/8ysZyaL-KxneTnjbOP1Nv1ReCAB14aySxK_0SMfpvm0/resizing_type:fit/width:1000/height:500/gravity:ce/enlarge:0/q:70/cb:2025100600/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JvLW1pZGRsZXdhcmUvYm8uYmRlX2NoYW5uZWwuZXZlbnQvaW1hZ2VzLzYvNDJiNmUyZGYtNjlhYi1hMTRmLTdlMDYtMWNiYThkMWYzYjNhLmpwZw.jpg",
+      posterUrl: "/berlin-weekend/images/museums/lygia-clark-retrospective.jpg",
       sourceUrl: "https://www.berlin.de/en/tickets/exhibitions/lygia-clark-retrospective-dbf26354-0fba-4397-9f6e-624dbccd817d/"
     },
     {
-      id: 2,
+      id: 4,
       title: "Klára Hosnedlová: embrace (CHANEL Commission)",
       venue: "Hamburger Bahnhof",
       district: "Moabit / Mitte",
@@ -24,11 +48,11 @@ const EXHIBITIONS = [
       priceRegular: "€16",
       priceReduced: "€8",
       description: "A monumental installation of nine-meter-high tapestries, embroidered reliefs and sculptural forms exploring utopia, home, and everyday life across political systems.",
-      posterUrl: "https://www.museumsportal-berlin.de/media/CACHE/images/432ba9deae4fd3456e193b09e91d4ec0.jpg",
+      posterUrl: "/berlin-weekend/images/museums/klara-hosnedlova-embrace.jpg",
       sourceUrl: "https://www.museumsportal-berlin.de/en/exhibitions/chanel-commission-klara-hosnedlova-embrace/"
     },
     {
-      id: 3,
+      id: 5,
       title: "Kazuko Miyamoto: String Constructions",
       venue: "KW Institute for Contemporary Art",
       district: "Spandauer Vorstadt / Mitte",
@@ -36,11 +60,11 @@ const EXHIBITIONS = [
       priceRegular: "€10",
       priceReduced: "€6",
       description: "Post-minimal and feminist pioneer Kazuko Miyamoto transforms rooms with her string-and-nail installations, tracing her dialogue with space, labour and material.",
-      posterUrl: "https://imgproxy.berlinonline.net/zL6hlKoNeUo7LPe81lHzhoKcZ5D2BLKO8xaPbCiWN0U/resizing_type:fit/width:1000/height:500/gravity:ce/enlarge:0/q:70/cb:2025100600/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JvLW1pZGRsZXdhcmUvYm8uYmRlX2NoYW5uZWwuZXZlbnQvaW1hZ2VzLzE0My8wZjg1ZGRkMC02MGNkLTMzMGMtNzI4Zi1mZDY0MGQxYmFjNjEuanBn.jpg",
+      posterUrl: "/berlin-weekend/images/museums/kazuko-miyamoto-string-constructions.jpg",
       sourceUrl: "https://www.berlin.de/en/tickets/exhibitions/kazuko-miyamoto-string-constructions-f82d4deb-e6b2-4060-8829-c4d87211e2bd/"
     },
     {
-      id: 4,
+      id: 6,
       title: "Beverly Buchanan: Weathering",
       venue: "Haus am Waldsee",
       district: "Zehlendorf / Steglitz-Zehlendorf",
@@ -48,11 +72,11 @@ const EXHIBITIONS = [
       priceRegular: "€9",
       priceReduced: "€6",
       description: "First German survey of U.S. artist Beverly Buchanan. Drawings, sculptures and vernacular architecture models exploring class, gender and memory in the American South.",
-      posterUrl: "https://imgproxy.berlinonline.net/6dDo8__9ExmLOm5ikQRjZAaMhwtOVIrPOrStbg-uKpo/resizing_type:fit/width:1000/height:500/gravity:ce/enlarge:0/q:70/cb:2025100523/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JkZS1jbXMvYm8udGIuZXZlbnQvaW1hZ2VzLzEwNS82YmEzZGRjNC00MmExLTQyNTQtYTQ2OS1mZDFiYWY5YWQ2N2UuanBn.jpg",
+      posterUrl: "/berlin-weekend/images/museums/beverly-buchanan-weathering.jpg",
       sourceUrl: "https://www.berlin.de/en/tickets/exhibitions/beverly-buchanan-weathering-06dc2686-07ff-4660-89cc-37b83840b874/"
     },
     {
-      id: 5,
+      id: 7,
       title: "Magnum: Close Enough",
       venue: "C/O Berlin (im Amerika-Haus)",
       district: "Charlottenburg-Wilmersdorf",
@@ -60,11 +84,11 @@ const EXHIBITIONS = [
       priceRegular: "€12",
       priceReduced: "€6",
       description: "Group exhibition of thirteen Magnum photographers exploring intimacy, identity, and conflict through striking documentary and conceptual photography.",
-      posterUrl: "https://imgproxy.berlinonline.net/Dfnf3Jq5GTikaMhAbq7igQge514sqLf1mAuwCC8Qaug/resizing_type:fit/width:1000/height:500/gravity:ce/enlarge:0/q:70/cb:2025100600/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JkZS1jbXMvYm8udGIuZXZlbnQvaW1hZ2VzLzEwOC9jZDhmNmIzMy02OTQ5LTQwODMtOGY2Yy0yNzVkNGViMzg0ZDIuanBn.jpg",
+      posterUrl: "/berlin-weekend/images/museums/magnum-close-enough.jpg",
       sourceUrl: "https://www.berlin.de/en/tickets/exhibitions/magnum-close-enough-ce295e73-868a-4ee2-9746-fbaed3a06e25/"
     },
     {
-      id: 6,
+      id: 8,
       title: "Mark Leckey: Enter Thru Medieval Wounds",
       venue: "Julia Stoschek Foundation",
       district: "Mitte",
@@ -72,23 +96,23 @@ const EXHIBITIONS = [
       priceRegular: "€5",
       priceReduced: "Free for students",
       description: "Turner-Prize-winning artist Mark Leckey reflects on pop culture, technology and class. Video, sculpture and sound installations connect medieval motifs with digital imagery.",
-      posterUrl: "https://imgproxy.berlinonline.net/qT18BPfnr1XscSmaEumQX4vEuuBW8A25dYXR4Krflxo/resizing_type:fit/width:1000/height:500/gravity:ce/enlarge:0/q:70/cb:2025100523/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JkZS1jbXMvYm8udGIuZXZlbnQvaW1hZ2VzLzQxL2ViMmM2MDhlLWEwYTEtNDlhMi05ZTI5LWVjM2MwNWE4NTg4YS5qcGc.jpg",
+      posterUrl: "/berlin-weekend/images/museums/mark-leckey-enter-thru-medieval-wounds.jpg",
       sourceUrl: "https://www.berlin.de/en/tickets/exhibitions/mark-leckey-enter-thru-medieval-wounds-b93f68cf-e3e8-4ce8-b74d-9d0c6f10f070/"
     },
     {
-      id: 7,
-      title: "Charmaine Poh: Make a travel deep of your inside, and don’t forget me to take",
+      id: 9,
+      title: "Charmaine Poh: Make a travel deep of your inside, and don't forget me to take",
       venue: "PalaisPopulaire (Deutsche Bank)",
       district: "Unter den Linden / Mitte",
       dates: "11 Sep 2025 – 23 Feb 2026",
       priceRegular: "€5",
       priceReduced: "€3",
       description: "Deutsche Bank’s Artist of the Year 2025. Singaporean artist Charmaine Poh explores identity, queerness and femininity across photography and video.",
-      posterUrl: "https://imgproxy.berlinonline.net/Suay06d0iqQdkZf5f5Wi96ScE-fG6gCY5w_63OHeojs/resizing_type:fit/width:1000/height:500/gravity:ce/enlarge:0/q:70/cb:2025100523/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JvLW1pZGRsZXdhcmUvYm8uYmRlX2NoYW5uZWwuZXZlbnQvaW1hZ2VzLzE0Mi9lMjY2NWIxYS0wNjhhLTZiMzUtOWU4ZS02NGY4MzAzYzlhODUuanBn.jpg",
+      posterUrl: "/berlin-weekend/images/museums/charmaine-poh-make-a-travel-deep.jpg",
       sourceUrl: "https://www.berlin.de/en/tickets/exhibitions/charmaine-poh-make-a-travel-deep-of-your-inside-and-don-t-forget-me-to-take-925dbea1-f8c6-4e23-8153-632bd32167b3/"
     },
     {
-      id: 8,
+      id: 10,
       title: "Feng Li: White Nights in Wonderland",
       venue: "Fotografiska Berlin",
       district: "Oranienburger Tor / Mitte",
@@ -96,11 +120,11 @@ const EXHIBITIONS = [
       priceRegular: "€15",
       priceReduced: "€10 (students / under 25)",
       description: "Chinese photographer Feng Li’s surreal flash-lit tableaux reveal dreamlike and absurd moments from global city life — between street and fashion photography.",
-      posterUrl: "https://imgproxy.berlinonline.net/IRRLNDO5A3pCuNuSIL6S36TnDdKHSInWoPmk_dup4D0/resizing_type:fit/width:1000/height:500/gravity:ce/enlarge:0/q:70/cb:2025100523/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JkZS1jbXMvYm8udGIuZXZlbnQvaW1hZ2VzLzk3LzNmNDAyYTNlLWM5OGUtNDYzMy1iMzYxLWZjYjYxNTA1MDE5Yy5qcGc.jpg",
+      posterUrl: "/berlin-weekend/images/museums/feng-li-white-nights-in-wonderland.jpg",
       sourceUrl: "https://www.berlin.de/en/tickets/exhibitions/feng-li-white-nights-in-wonderland-4a5050c3-07df-4e85-9cee-940128ea0af6/"
     },
     {
-      id: 9,
+      id: 11,
       title: "Raoul Hausmann: 1886–1971",
       venue: "Berlinische Galerie",
       district: "Kreuzberg / Friedrichshain-Kreuzberg",
@@ -112,7 +136,7 @@ const EXHIBITIONS = [
       sourceUrl: "https://www.berlin.de/en/tickets/exhibitions/raoul-hausmann-1886-1971-4009c97a-8294-4637-95ff-aa0de8675ac2/"
     },
     {
-      id: 10,
+      id: 12,
       title: "Founded on Antiquity",
       venue: "Altes Museum",
       district: "Museum Island / Mitte",
@@ -120,9 +144,9 @@ const EXHIBITIONS = [
       priceRegular: "€12",
       priceReduced: "€6",
       description: "Exhibition celebrating the 200th anniversary of the Altes Museum — exploring how ancient Greek and Roman art shaped modern aesthetics and national identity.",
-      posterUrl: "https://www.smb.museum/typo3temp/assets/_processed_/0/c/csm_Rotunde_Altes-Museum_Grundstein-Antike_xl_4861aceb80.jpg",
+      posterUrl: "/berlin-weekend/images/museums/founded-on-antiquity.jpg",
       sourceUrl: "https://www.smb.museum/en/exhibitions/detail/founded-on-antiquity/"
-    }
+    },
   ];  
 
 function mapsSearchUrl(venueName) {
@@ -133,7 +157,7 @@ export default function Museums() {
   const handleShare = async () => {
     const url = window.location.href;
     const title = "Berlin Museums & Galleries";
-    const text = "10 current/upcoming exhibitions with student/youth tickets ≤ €15";
+    const text = "12 current/upcoming exhibitions with student/youth tickets ≤ €15";
     try {
       if (navigator.share) {
         await navigator.share({ title, text, url });
@@ -167,13 +191,13 @@ export default function Museums() {
       <section className="max-w-screen-md mx-auto px-4 pt-6 pb-4">
         <div className="rounded-2xl bg-gradient-to-br from-purple-100 to-indigo-100 p-4 sm:p-5 shadow-sm">
           <p className="text-sm text-zinc-800 leading-relaxed mb-3">
-            Curated list of 10 <strong>current/upcoming</strong> exhibitions with <strong>student/youth tickets ≤ €15</strong>. 
+            Curated list of 12 <strong>current/upcoming</strong> exhibitions with <strong>student/youth tickets ≤ €15</strong>. 
             Explore contemporary art, photography, and retrospectives across Berlin's best museums and galleries.
           </p>
           <div className="flex flex-wrap gap-3 text-sm text-zinc-700">
             <div className="inline-flex items-center gap-2">
               <Palette className="w-4 h-4" />
-              <span>10 exhibitions</span>
+              <span>12 exhibitions</span>
             </div>
             <div className="inline-flex items-center gap-2">
               <Euro className="w-4 h-4" />

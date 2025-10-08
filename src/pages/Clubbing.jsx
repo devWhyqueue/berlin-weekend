@@ -29,7 +29,7 @@ function getClubEvents() {
       genre: "Industrial / groovy techno, warehouse",
       lineup: "OMAKS · Kø:lab · Arman John · 4NOUK · SIKOTI · Laviena · SEKTOR69 · DJ Achim Feuervogel · DJ Tallboy · Amo (IT) · GEORGE aka Dr.Radsport",
       price: "€25",
-      posterUrl: "https://imgproxy.ra.co/_/quality:66/w:1442/rt:fill/aHR0cHM6Ly9pbWFnZXMucmEuY28vYmFmYjVkMDVlOGY1N2JiODMwZGRkNGVhNDQzMTJkMzZjNTBhNTU4MS5qcGc=",
+      posterUrl: "/berlin-weekend/images/clubbing/hive-devoted-dstrkt.jpg",
       url: "https://de.ra.co/events/2089552",
       notes: "Massive underground night; slightly above €20 budget but strong independent lineup."
     },
@@ -41,7 +41,7 @@ function getClubEvents() {
       genre: "Raw techno / electro / live sets",
       lineup: "Globus: Luca Lozano · Mr. Ho · B.AI · Tresor: Aoife · Boston 168 (LIVE) · DJ Plant Texture",
       price: "€20",
-      posterUrl: "https://imgproxy.ra.co/_/quality:66/w:1028/rt:fill/aHR0cHM6Ly9pbWFnZXMucmEuY28vY2EyY2IwMDZiNDkxMDAyM2ExOTgzOGI5YmRiOGIyYjkyYjE0OGNkZC5qcGc=",
+      posterUrl: "/berlin-weekend/images/clubbing/tresor-meets-klasse-wrecks.jpg",
       url: "https://de.ra.co/events/2249629",
       notes: "Label-night synergy — core Berlin techno energy across Globus & Tresor floors."
     },
@@ -53,7 +53,7 @@ function getClubEvents() {
       genre: "Hard techno / industrial",
       lineup: "Curated by Ellen Allien · Juliana Huxtable · Slimfit · Alizée Gavory + many more across 4 floors",
       price: "€20.5",
-      posterUrl: "https://imgproxy.ra.co/_/quality:66/w:1028/rt:fill/aHR0cHM6Ly9pbWFnZXMucmEuY28vNWQ5OWExYjk1NjE1ZmYwZTE1Yzc2NThiYTRiZjAwNDIxOWNhZDY4NC5qcGc=",
+      posterUrl: "/berlin-weekend/images/clubbing/we-are-not-alone-rso.jpg",
       url: "https://de.ra.co/events/2244274",
       notes: "RA Pick · 56 hours of nonstop techno — massive crowd, flagship of the weekend."
     },
@@ -65,7 +65,7 @@ function getClubEvents() {
       genre: "Drum & Bass / Breakbeat Anniversary",
       lineup: "Box 1: VIER · Ivy Lab · gyrofield · Bukez Finezt · Box 2: Fire at Work (LIVE) · KaraKara · SKVLLFACE · Kenzura b2b Rabbi Green · GRAU · Saint Popsy b2b SKVLLFACE b2b Jesh b2b Dubshroud",
       price: "€20.35 (door)",
-      posterUrl: "https://imgproxy.ra.co/_/quality:66/w:1028/rt:fill/aHR0cHM6Ly9pbWFnZXMucmEuY28vYzQ3YmZhMzhiMjU2NmRjOGQ3MzFlMjNhNjJjOTk1ZDMyZDY2NzUwYS5qcGc=",
+      posterUrl: "/berlin-weekend/images/clubbing/20-years-vision-gretchen.jpg",
       url: "https://de.ra.co/events/2254699",
       notes: "Major D&B birthday bash — two rooms of international headliners, tight €20 cap."
     },
@@ -77,7 +77,7 @@ function getClubEvents() {
       genre: "Deep / hypnotic techno · house",
       lineup: "Jane Fitz b2b Marco Shuttle (8-hour set) + Particles crew",
       price: "€26",
-      posterUrl: "https://imgproxy.ra.co/_/quality:66/w:1442/rt:fill/aHR0cHM6Ly9pbWFnZXMucmEuY28vNWNmMTRjZjM4ZjRlMzA1MTVkN2VlNTk0N2Y0NDBkMmI4ZjRlY2Y2MS5qcGc=",
+      posterUrl: "/berlin-weekend/images/clubbing/particles-at-night-zenner.jpg",
       url: "https://de.ra.co/events/2201958",
       notes: "Lakeside venue; long journey set for heads — above budget but outstanding musical quality."
     }

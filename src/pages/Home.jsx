@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Beer, ShoppingBag, Palette, MapPin, ArrowRight, Coffee, Wine, Music2, Utensils } from "lucide-react";
+import { Beer, ShoppingBag, Palette, MapPin, ArrowRight, Coffee, Wine, Music2, Utensils, Calendar, Star } from "lucide-react";
 
 export default function Home() {
   return (
@@ -20,6 +20,48 @@ export default function Home() {
         </header>
 
         <div className="space-y-4">
+          <Link
+            to="/weekend-plan"
+            className="block rounded-3xl border-4 border-gradient-to-r from-purple-300 via-pink-300 to-rose-300 bg-gradient-to-br from-purple-100 via-pink-50 to-rose-100 p-8 shadow-2xl hover:shadow-3xl transition-all hover:scale-[1.02] relative overflow-hidden"
+          >
+            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-yellow-200 to-orange-200 rounded-full -translate-y-16 translate-x-16 opacity-20"></div>
+            <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-blue-200 to-purple-200 rounded-full translate-y-12 -translate-x-12 opacity-20"></div>
+            <div className="relative z-10">
+              <div className="flex items-start justify-between mb-4">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 text-white shadow-lg">
+                    <Calendar className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <h2 className="text-2xl font-bold text-zinc-900 mb-1">
+                      Weekend Plan
+                    </h2>
+                    <div className="flex items-center gap-2">
+                      <Star className="w-4 h-4 text-yellow-500 fill-current" />
+                      <span className="text-sm font-medium text-purple-700">Featured</span>
+                    </div>
+                  </div>
+                </div>
+                <ArrowRight className="w-7 h-7 text-purple-600 shrink-0" />
+              </div>
+              <p className="text-base text-zinc-800 mb-4 leading-relaxed">
+                Complete 3-day itinerary for October 11-13, 2024. Tiergarten walks, food festivals, 
+                vintage shopping, comedy shows, and Berlin's best spots all planned out.
+              </p>
+              <div className="flex flex-wrap gap-3 text-sm">
+                <span className="rounded-full bg-white/80 px-3 py-1.5 border border-purple-200 font-medium text-purple-800">
+                  3 days planned
+                </span>
+                <span className="rounded-full bg-white/80 px-3 py-1.5 border border-pink-200 font-medium text-pink-800">
+                  Oct 11-13, 2024
+                </span>
+                <span className="rounded-full bg-white/80 px-3 py-1.5 border border-rose-200 font-medium text-rose-800">
+                  All activities included
+                </span>
+              </div>
+            </div>
+          </Link>
+
           <Link
             to="/restaurants"
             className="block rounded-2xl border-2 border-rose-200 bg-gradient-to-br from-rose-50 to-pink-50 p-6 shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
@@ -151,12 +193,12 @@ export default function Home() {
                   </h2>
                 </div>
                 <p className="text-sm text-zinc-700 mb-3">
-                  10 current/upcoming exhibitions with affordable student tickets (≤ €15). 
+                  12 current/upcoming exhibitions with affordable student tickets (≤ €15). 
                   Contemporary art, photography, and major retrospectives.
                 </p>
                 <div className="flex flex-wrap gap-2 text-xs text-zinc-600">
                   <span className="rounded-full bg-white px-2 py-1 border border-purple-200">
-                    10 exhibitions
+                    12 exhibitions
                   </span>
                   <span className="rounded-full bg-white px-2 py-1 border border-purple-200">
                     €3–€10 (students)

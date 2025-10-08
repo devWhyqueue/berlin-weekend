@@ -11,7 +11,7 @@ const RESTAURANTS = [
     hours: "Mon–Sat ~ 11:30–20:00, Sun closed (verify locally)",
     price: "€",
     highlights: "Popular chicken & vegetable döner; fresh ingredients, multiple bread choices",
-    imageUrl: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nr-HevQJBS8wwC-Uk6MMQXidjpYZrzTU4-rPNq3kk2om_jKwcZ514WIqnghp6_f-zmBTpSGHp91RGzTGzC_K_mhKcJ9HDhyDmw5l9DfjOwbHVUM5Jh8Sp5D57rqvkdvVdvvMwY6SQ=s680-w680-h510-rw",
+    imageUrl: "/berlin-weekend/images/restaurants/ruya-gemuse-kebap.jpg",
     website: "",
   },
   {
@@ -22,7 +22,7 @@ const RESTAURANTS = [
     hours: "Tue–Sun 17:00–23:00, closed Mon",
     price: "€€",
     highlights: "Vegan Neapolitan pizza from wood-oven, vegan desserts, cozy vegan spot",
-    imageUrl: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrHd0nOn61YSNc4E9Y01rQaA1DRd1tXm0lBCyeNhxHiy_piBwAQWFN8Gukmq74QzVyfu9ZrBzDU4Quj7I79_Fb5FFYSshViZ7SAWZeZwimkPvqQdsoC7N2MHt2oWtQg_owcZRb7=s680-w680-h510-rw",
+    imageUrl: "/berlin-weekend/images/restaurants/la-stella-nera.jpg",
     website: "https://www.lastellanera.de",
   },
   {
@@ -33,7 +33,7 @@ const RESTAURANTS = [
     hours: "Tue–Fri 12:00–15:30 & 17:30–23:00, Sat–Sun 12:00–23:00, Mon closed",
     price: "€€",
     highlights: "Vegetarian / vegan Chinese / Sichuan style; dim sum, spicy & mild options",
-    imageUrl: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noZ3IsUCYJfpTn0IRU_8JQ_nXIxVspMg3stoUUQ-iJZpfqnYmn7BFj1y5buXVX_aBJQgOETcoCINVBTRh18QNk1WfQ4X6dxE0vASjsNaBmxary4s22G-I6eUsxLBnOwvoNzTWoCBW7NtMg=s680-w680-h510-rw",
+    imageUrl: "/berlin-weekend/images/restaurants/tianfuzius.jpg",
     website: "https://tianfuzius.de",
   },
   {
@@ -44,7 +44,7 @@ const RESTAURANTS = [
     hours: "Tue–Thu 17:00–23:00, Fri 14:00–23:00, Sat & Sun 10:00–23:00, Mon closed",
     price: "€€",
     highlights: "Vegan Uzbek / Central Asian cuisine; set menus, nomadic flavors, brunch weekends",
-    imageUrl: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrCMEZE-6bf9fI_hAEJkEjF4TsVzycJ-xiZKBvk8nhaNygRJ4__Z61V3wMAYYwvtPsquRi9sPqTMjBq1SH1hZ-DuB7TkeFYJim567DrYUz7FopfK17e-dTDdb6w-P-UBA6NBCB6ppGiXEQ=s680-w680-h510-rw",
+    imageUrl: "/berlin-weekend/images/restaurants/dervish.jpg",
     website: "https://dervish.eu",
   },
   {
@@ -55,7 +55,7 @@ const RESTAURANTS = [
     hours: "Daily ~12:00–21:30 / 22:00",
     price: "€€",
     highlights: "Vegan gourmet burgers, homemade sauces, variety of patties & sides",
-    imageUrl: "https://lh3.googleusercontent.com/p/AF1QipOC0sNsy5B4CThlpz2j04zH_lAnwvLR1FDEDf3i=w2880-h2304-n-k-no",
+    imageUrl: "/berlin-weekend/images/restaurants/vegd-vegan-burgers.jpg",
     website: "https://www.vegd.eu",
   },
   {
@@ -66,7 +66,7 @@ const RESTAURANTS = [
     hours: "Mon–Sun 12:00–22:00",
     price: "€",
     highlights: "Vegan fast food: burgers, wraps, vegan currywurst, fried snacks & pizzas",
-    imageUrl: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noUCzFjz5Kf59QrAdiYxe0HCbXhSLS3xLsIqnLdEC6WbYFQxflX3q8sG9VNDmpssLK1aM329jM1edHlkmKaWrCMIaB07tDAJCNpmaOQqpKZmVHfotkk_wbyK4x0UsScDZTLMFOu=s680-w680-h510-rw",
+    imageUrl: "/berlin-weekend/images/restaurants/yoyo-foodworld.jpg",
     website: "https://www.yoyofoodworld-berlin.de",
   },
 ];
