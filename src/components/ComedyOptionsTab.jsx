@@ -7,7 +7,8 @@ const ComedyOptionsTab = () => {
   const comedyOptions = [
     {
       id: 0,
-      title: "Spree vom Weizen",
+      title: "Modus",
+      fullTitle: "Spree vom Weizen",
       subtitle: "Poetry Slam & Stand Up Show",
       time: "20:00 - 22:00",
       location: "Modus Berlin",
@@ -20,7 +21,8 @@ const ComedyOptionsTab = () => {
     },
     {
       id: 1,
-      title: "Prime Theater",
+      title: "Prime",
+      fullTitle: "Prime Theater",
       subtitle: "Gutes Wedding, Schlechtes Wedding",
       time: "19:30",
       location: "Prime Time Theater, Berlin",
@@ -33,7 +35,8 @@ const ComedyOptionsTab = () => {
     },
     {
       id: 2,
-      title: "Kallefornia Comedy",
+      title: "Kallefornia",
+      fullTitle: "Kallefornia Comedy",
       subtitle: "Weekend Special",
       time: "20:30",
       location: "MAD MONKEY ROOM, Danziger Straße 1, 10435 Berlin",
@@ -50,20 +53,21 @@ const ComedyOptionsTab = () => {
 
   return (
     <div className="bg-white/70 rounded-2xl p-4 shadow-sm border border-white/50">
+
       {/* Tab Headers */}
-      <div className="flex gap-1 mb-4 bg-zinc-100 rounded-xl p-1">
+      <div className="flex gap-1 mb-4 bg-zinc-100 rounded-xl p-1 overflow-x-auto">
         {comedyOptions.map((option, index) => (
           <button
             key={option.id}
             onClick={() => setActiveTab(index)}
-            className={`flex-1 rounded-lg px-3 py-2 text-xs font-medium transition-all ${
+            className={`flex-1 min-w-0 rounded-lg px-2 sm:px-3 py-2 text-xs font-medium transition-all ${
               activeTab === index
                 ? 'bg-white shadow-sm text-indigo-700 border border-indigo-200'
                 : 'text-zinc-600 hover:text-zinc-900 hover:bg-white/50'
             }`}
           >
             <div className="flex items-center justify-center gap-1">
-              {option.recommended && <Star className="w-3 h-3 text-yellow-500" />}
+              {option.recommended && <Star className="w-3 h-3 text-yellow-500 flex-shrink-0" />}
               <span className="truncate">{option.title}</span>
             </div>
           </button>
@@ -93,7 +97,7 @@ const ComedyOptionsTab = () => {
                 </span>
               )}
             </div>
-            <h4 className="font-semibold text-zinc-900 mb-1">{activeOption.title}</h4>
+            <h4 className="font-semibold text-zinc-900 mb-1">{activeOption.fullTitle}</h4>
             <p className="text-sm text-zinc-600 mb-2">{activeOption.subtitle}</p>
             <p className="text-sm text-zinc-700 mb-2">{activeOption.description}</p>
           </div>

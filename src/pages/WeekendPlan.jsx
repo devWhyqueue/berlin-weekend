@@ -150,9 +150,7 @@ const WEEKEND_PLAN = {
           link: "/berlin-weekend/restaurants"
         },
          {
-           time: "8:00 PM",
            title: "Comedy Options",
-           type: "comedy",
            description: "Choose from three great comedy shows",
            isTabComponent: true
          },
@@ -390,17 +388,9 @@ export default function WeekendPlan() {
             <div className="space-y-4">
               {day.activities.map((activity, activityIndex) => (
                 activity.isTabComponent ? (
-                  <div key={activityIndex}>
-                    <div className="flex items-center gap-2 mb-3">
-                      <span className="text-xs font-mono text-zinc-500 bg-zinc-100 px-2 py-0.5 rounded">
-                        {activity.time}
-                      </span>
-                      <span className={`text-xs px-2 py-0.5 rounded-full border ${getActivityColor(activity.type)}`}>
-                        {activity.type}
-                      </span>
-                    </div>
-                    <ComedyOptionsTab />
-                  </div>
+                  <ComedyOptionsTab 
+                    key={activityIndex}
+                  />
                 ) : (
                   <div key={activityIndex} className="bg-white/70 rounded-2xl p-4 shadow-sm border border-white/50">
                     <div className="flex items-start gap-3">
